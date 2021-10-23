@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.center-display {
+    display: flex;
+    flex: 1;
+    gap: 5%;
+}
+
+.center-left {
+    width: 153px;
+}
+
+p {
+    display: flex;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0;
+}
+
+p.default {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+p.remove {
+    background-color: lightpink;
+    font-weight: bold;
+}
+
+button#remove-button {
+    background-color: lightpink;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+button#remove-button:hover {
+    background-color: #ff8598;
+}
+
+
+#add-book {
+    display: block;
+}
+
+form {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#current-library {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 0.5fr 1.2fr 0.7fr;
+    grid-template-rows: auto;
+    border: 1px solid black;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

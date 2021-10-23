@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <header>Library</header>
+    </div>
+    <div class="center-display">
+        <div class="center-left">
+            <div id="add-button">
+                <button id="add-book">Add New Book</button>
+            </div>
+            <form id="form" action="javascript:;" onsubmit="addBookToLibrary(this)">
+                <div class="text-box">
+                    <label for="title">Title:</label>
+                    <input type=text id="title" name="title">
+                </div>
+                  
+                <div class="text-box">
+                    <label for="author">Author:</label>
+                    <input type=text id="author" name="author">
+                </div>
+
+                <div class="text-box">
+                    <label for="pages">Page Count:</label>
+                    <input type=number id="pages" name="pages">
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="unread" value="Unread" name="status">
+                    <label for="unread">Unread</label>
+                </div> 
+
+                <div class="radio">
+                    <input type="radio" id="current" value="Currently Reading" name="status">
+                    <label for="current">Currently reading</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="finished" value="Finished Reading" name="status">
+                    <label for="finished">Finished reading</label>   
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>  
+        </div>
+        <div class="center-right">
+            <div id="current-library">
+                <p class="default">Title</p>
+                <p class="default">Author</p>
+                <p class="default">Pages</p>
+                <p class="default">Status</p>
+                <p class="remove">Remove</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">By lizcoding for The Odin Project</div>
+<script src="script.js"></script>
+</body>
