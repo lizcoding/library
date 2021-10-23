@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -41,21 +42,50 @@ p.default {
     font-weight: bold;
 }
 
+p.status {
+    align-items: center;
+    justify-content: center;
+    background-color: #b3fdb3;
+    font-weight: bold;
+}
+
+p.status.item {
+    font-weight: normal;
+}
+
+p.status.item:hover {
+    font-weight: bold;
+    background-color: #55ec55;
+}
+
 p.remove {
+    align-items: center;
+    justify-content: center;
     background-color: lightpink;
     font-weight: bold;
 }
 
-button#remove-button {
-    background-color: lightpink;
-    font-weight: bold;
+p.status-dropdown {
+    display: none;
+    background-color: #b3fdb3;
     border: 1px solid black;
 }
 
-button#remove-button:hover {
-    background-color: #ff8598;
+.options {
+    display: flex;
+    flex-direction: column;
 }
 
+button.remove-button {
+    background-color: lightpink;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+button.remove-button:hover {
+    font-weight: bold;
+    background-color: #ff8598;
+}
 
 #add-book {
     display: block;
